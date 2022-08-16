@@ -1,0 +1,1061 @@
+:root{
+    --title-text :'Libre Baskerville', serif;
+    --paragraph-text : 'Varela Round', sans-serif;
+    --banner-text: 'Kaushan Script', cursive;
+    --subheading-text: 'Varela', sans-serif;
+    --line-height : 24px;
+    --text-size : 16px;
+    --secondary-color: #cb7152;
+    --dark: #23282f;
+    --footer-head-color: #cb9252;
+    --darken: #312b30;
+    --brown-light: #F5F3F0;
+    --grey : #f6f6f6;
+    --white: #fff;
+}
+
+html.sr .animate {
+    visibility: hidden;
+}
+  
+body {
+    position: relative;
+/*
+    height: 10000px;
+    background: green;
+*/
+}
+
+a {
+    color: white;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.add-ornament-top::before {
+    display: block;
+    background-color: var(--dark);
+    height: 26px;
+    content: '';
+    -webkit-mask-image: url(https://vip-restaurant.vamtam.com/wp-content/themes/vip-restaurant/vamtam/assets/images/ornament-top.svg);
+    mask: url(https://vip-restaurant.vamtam.com/wp-content/themes/vip-restaurant/vamtam/assets/images/ornament-top.svg#mask);
+    width: 156px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.bg-center {
+    background-position: center !important;
+}
+
+.title-above {
+    animation: appear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.img-450 {
+    height: 285px !important;
+    width: 285px !important;
+}
+
+@keyframes appear {
+    0% { opacity: 0; };
+    100% { opacity: 1; };
+}
+
+
+
+/*.......................................*/
+.header-body{
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+     height: 80vh;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.navbar{
+    height: 4rem;
+    z-index: 888;
+}
+
+.navbar .navbar-brand{
+    font: 30px var(--title-text);
+    color: white;
+}
+    
+
+.search-header {
+    font-size: 30px;
+    color: var(--white);
+}
+
+  .search-header:hover {
+    color: var(--red);
+}
+.navbar-nav {
+    margin-left: 120px;
+}
+  
+.navbar .nav-link{
+    color: var(--white) !important;
+/*    font: 14px var(--paragraph-text);*/
+    padding: 0 15px !important;
+    transition: all .5s ease-out;
+/*    margin-right: 5px;*/
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.navbar .nav-link:hover{
+/*    font-size: 10px;  */
+    color: yellowgreen;
+    border: 1px solid var(--secondary-color);
+    background-color: yellowgreen;
+    border-radius: 10px;
+     transition: all .5s ease-out;
+    
+}
+
+.navbar .nav-link:focus-within {
+    border: 1px solid var(--secondary-color);
+}
+
+.nav-line{
+    background-color: var(--white);
+    opacity: .5;
+    margin: 0;
+    height: 1px;
+}
+
+
+.fixed-top{
+    background: gray;
+}
+/*
+
+
+.nav-scrolled {
+    height: 3rem;
+    position: fixed;
+    background-color: var(--brown-light);
+    width: 100%;
+    box-shadow: 5px 0 10px grey;
+    transition: .5s;
+}
+
+.nav-scrolled .nav-link {
+    color: var(--dark) !important;
+    font: 13px var(--paragraph-text);
+    padding: 0 12px !important;
+    transition: all .5s ease-out;
+    margin-right: 5px;
+}
+
+.nav-scrolled .navbar-brand{
+    color: var(--dark);
+    font: 25px var(--title-text);
+}
+
+.nav-scrolled .nav-link:hover{
+   color: var(--secondary-color) !important;
+   border: none;
+   border-radius: 0;
+   transition: all .3s ease-out;
+}
+
+.nav-scrolled .search-header {
+    color: var(--dark);
+    font-size: 1.2rem;
+}
+
+
+.nav-scrolled .search-header:hover {
+    color: var(--secondary-color);
+}
+
+.nav-scrolled .dropdown-item{
+    font: 13px var(--paragraph-text);
+}
+
+*/
+
+
+.dropdown-item{
+    font: 14px var(--paragraph-text);
+}
+
+.dropdown-item:hover{
+    background: var(--white);
+    color: var(--secondary-color);
+}
+
+.dropdown-item:focus{
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+
+
+
+
+.cart-dropdown-inner{
+    position: relative;
+    display: inline-block;
+}
+
+.cart-dropdown-inner .cart-icon{
+    color: var(--white);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.cart-dropdown-inner .cart-empty{
+    position: absolute;
+    top: -10px;
+    right: -13px;
+    border: 1px solid #8b8383;
+    border-radius: 50%;
+    padding: 5px;
+    font:10px var(--paragraph-text);
+    color: var(--white);
+}
+
+.cart-dropdown-out{
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+    background: var(--white);
+    min-height: 5rem;
+    width: 20%;
+    padding: 25px 25px 25px 20px;
+    display: none;
+}
+
+.navbar-toggler{
+    padding: 0;
+}
+
+.toggler-btn{
+    transition: all 2s ease;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: var(--white);
+    transition: all 0.5s ease;/*navbara klikleyende navbarin acilma muddeti*/   
+}
+
+.bar2{
+    width: 23px !important;
+}
+
+.bar3 {
+    width: 16px !important;
+} 
+
+.change .bar1{
+    transform: rotate(45deg) translate(5px,6px);
+    width: 30px !important;
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(-45deg) translate(5px,-6px);
+    width: 30px !important;
+}
+
+
+
+
+
+#header .banner-heading{
+    padding-top: 8rem;
+    font: 9rem var(--banner-text);
+    line-height: 3.6rem;
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    text-shadow: 3px 3px 8px var(--secondary-color);
+    transform-origin: 50% 50% 0px;
+    display: inline-block;
+}
+
+#header .banner-heading .banner-heading-top{
+    animation: coffeeAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    color: aliceblue;
+}
+
+#header .banner-heading .banner-heading-bottom{
+    animation: mattersAnim;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+        color: aliceblue;
+}
+
+#header .header-img {
+    position: absolute;
+    bottom: -15%;;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.banner-paragraph{
+    font: 1.5rem var(--banner-text);
+    transform: matrix3d(0.990268, -0.139173, 0, 0, 0.139173, 0.990268, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    animation: banner-p-anim;
+
+}
+
+/*#header .banner-heading,*/
+#header .banner-paragraph{
+    text-shadow: 3px 3px 7px var(--secondary-color);
+}
+
+@keyframes coffeeAnim{
+    0%{
+        transform: translateY(70px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-10px)
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes mattersAnim{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+} 
+
+
+#welcome{
+        margin-top: 150px;
+}
+
+.welcome-img1{
+    height: 150px;
+    margin-left: 200px;
+    z-index: -5;
+    filter: drop-shadow(0px 40px 30px grey);
+}
+
+.column-content:nth-child(even){
+    margin-left: 130px;
+    margin-top: -60px;
+    box-shadow: 0px 6px 15px -7px red;
+}
+
+/*
+.first-column{
+    position: relative;
+}
+
+.first-column-content{
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    z-index: 0;
+}
+*/
+
+
+
+.column-content .heading{}
+.column-content .welcome1-txt{
+    
+}
+
+.column-content2{}
+
+
+.welcome-img2{
+    height: 145px;
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    z-index: -5;
+/*    filter: drop-shadow(0px 40px 30px white);*/
+}
+
+.column-content4{
+    margin-top: -60px;
+     width: 396px;
+    box-shadow: 0px 6px 15px -7px red;
+
+}
+.column-content4 .heading{}
+
+.column-content4 .welcome-txt{}
+
+.column-content5{}
+.column-content5 .heading{}
+
+
+
+#welcome-info{
+     margin-top: 150px;
+    box-shadow: 5px 3px 10px var(--dark);
+    position: relative;
+
+}
+
+  #welcome-info .menu-item{
+    border-right: 1px dotted #8b8383;
+}
+
+.brunch-img{}
+
+.menu-item-content{
+        margin-top: 80px;
+}
+
+#coffe-img{
+        margin-top: 50px;
+}
+
+.heading{}
+.welcome-info-h6{}
+.menu_list{}
+.menu_list .menu-title {
+        margin-bottom: -25px;
+}
+.menu_list .menu-item-price{
+    margin-left: 365px;
+}
+.menu_list p{}
+
+.text-center1{
+    
+}
+.text-center .heading{
+          margin-top: 30px;
+}
+.text-center{
+     margin-top: 40px;
+}
+.text-center .txt-info-h6{}
+
+.menu_list1{}
+.menu_list1 p{}
+.happyhour-phone{}
+
+
+.happyhour-phone {
+    color: black;
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 150px;
+}
+
+
+/*        button hover*/
+.btn-button{
+    transition: 1s;
+    color: var(--white);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1.5rem;
+    padding: .8rem 1.8rem;
+    font: .9rem var(--paragraph-text);
+    margin-left: 20px;
+}
+
+.btn-bfr {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: transparent;
+    color: var(--dark);
+}
+
+.btn-bfr::before {
+    background-color: var(--secondary-color);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 1s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-anim::before {
+    width: 100%;
+    height: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.btn-anim:hover::before {
+    height: 380%;
+}
+.btn-anim:hover {
+    color: var(--white);
+}
+
+#offer{}
+#offer-sec{  margin-left: 20px;
+      margin-top: 30px;
+}
+#offer .heading{}
+#offer .welcome-info-6{
+     color: red;
+    font-size: 20px;
+    margin-top: -10px;
+}
+#offer-sec .offer-image{
+    border-radius: 50%;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+#offer .offer-image:hover{
+    border-radius: 30%;
+    transition: all .2s ease-in-out;
+}
+#offer-sec .heading{
+
+}
+#offer-sec .heading:hover{
+    color: aqua;
+}
+#offer-sec .welcome-text{
+    color: black;
+}
+
+
+.heading-line{
+    overflow: hidden;
+}
+
+.heading-line:before,
+.heading-line:after{
+    background: rgb(168, 164, 164);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+#tea .tea-image{
+    background:linear-gradient(rgb(59, 59, 59,.3),rgb(59, 59, 59,.3)), url(../img/tea-bg.jpg) center/cover fixed no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+
+#tea .tea-image:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/06/waves-decoration.svg) repeat-x center top;
+    background-size: auto;
+/*    background-attachment: scroll;*/
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+    height: 3rem;
+}
+
+#tea .tea-text,
+#tea .heading{
+    letter-spacing: .5rem;
+}
+
+
+
+
+/*........buddha.....................*/
+
+#buddha .card-image .btn-card{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid var(--dark);
+    border-radius: 4rem;
+    font: 12px var(--title-text);
+    background-color: var(--white);
+    display: none;
+}
+
+#buddha .card-image .btn-card:hover{
+    background-color: #18191d;
+    color: var(--white);
+}
+
+#buddha .card-image:hover .card-img-top{
+    transform: scale(1.2);
+    transition: all 2s ease; 
+}
+
+#buddha .card-img-top{
+    transition: all 2s ease;
+}
+
+
+#buddha .card:hover .btn-card{
+    display: block;
+    animation: fromBottom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/*
+#buddha{
+    margin: 8rem 0;
+}
+*/
+
+#buddha .card .card-text{
+    font-size: 12px ;
+}
+#buddha .card .card-category{
+    font: 11px var(--paragraph-text);
+    border: 1px solid #8b8383;
+    border-radius: 1rem;
+    padding: 0 .3rem;
+}
+
+#buddha .card .card-text,
+#buddha .card .card-title{
+   font-family:  var(--title-text)
+}
+
+#buddha .card-category:hover,
+#buddha .card-title:hover{
+    color: var(--secondary-color) !important;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+#buddha .carousel-item .card-image{
+    overflow: hidden;
+    position: relative;
+}
+
+#buddha #img3{
+    color: #8d2929;
+    margin-top: 100px;
+}
+
+.mid-content11 h1{
+        margin-top: 30px;
+}
+
+#buddha .card{
+     margin-top: 100px;   
+}
+
+
+
+/*..............menue,,,,,,,,,,,,,*/
+
+#menu-item{}
+#menu-item .left-menu{}
+#menu-item h6{}
+#menu-item .heading{}
+
+#menu-item .left-menu{
+    border: 1px dotted rgba(14, 13, 13, 0.9);
+    border-top: 0;
+    border-left: 0;
+    border-radius: .7rem;
+    box-shadow:5px 10px 30px grey;
+}
+
+#menu-item .right-menu{
+    border: 1px dotted rgba(14, 13, 13, 0.9);
+    border-top: 0;
+    border-left: 0;
+    border-radius: .7rem;
+    box-shadow:5px 10px 30px grey;
+}
+
+#menu-item .left-menu h6, span{
+    margin-left: 15px;
+}
+#menu-item .right-menu h6, span{
+    margin-left: 15px;
+}
+#menu-item .mid-menu h6, span{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+/*button hover*/
+
+.view-more-button .btn-button{
+    transition: 1s;
+    color: var(--white);
+    border: 1px solid var(--secondary-color);
+    border-radius: 1.5rem;
+    padding: .8rem 1.8rem;
+    font: .9rem var(--paragraph-text);
+    margin-left: 45%;
+    margin-top: 15px;
+}
+
+.view-more-button .btn-bfr {
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: transparent;
+    color: red;
+}
+
+.view-more-button .btn-bfr::before {
+    background-color: var(--secondary-color);
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 1s ease;
+    height: 100%;
+    width: 100%;
+}
+
+.view-more-button .btn-anim::before {
+    width: 100%;
+    height: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.view-more-button .btn-anim:hover::before {
+    height: 380%;
+}
+.view-more-button .btn-anim:hover {
+    color: var(--white);
+}
+
+
+/*
+.heading-linee{
+    overflow: hidden;
+}
+*/
+
+.heading-linee:before,
+.heading-linee:after{
+    background: rgb(168, 164, 164);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.heading-linee:before{
+    margin-left: -50%;
+    right: .5em;
+}
+
+.heading-linee:after{
+    left: .5em;
+    margin-right: -50%;
+}
+
+
+/*........direction...........*/
+ 
+
+
+#direction{
+    margin: 4rem 0;
+    padding: 4rem 0;
+    background-color:var(--dark);
+    position: relative;
+}
+
+#direction button{
+    color: wheat;
+}
+#direction button:hover{
+    color: mediumvioletred;
+    background-color: wheat;
+    border-radius: 60%
+}
+#direction .direction-opening-text{
+    border-bottom: 1px dotted white;
+} 
+
+#direction .fa-globe-americas{
+    color: var(--secondary-color);
+}
+.direction-social-icons{
+    background-color:darkgray;
+    display: inline-block;
+    border-radius: 1rem;
+    padding:0 1rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.direction-social-icons .fa-facebook-f,
+ .direction-social-icons .fa-twitter,
+.direction-social-icons .fa-instagram{
+    margin-top: 5px ;
+    transition: all .5s ease;
+    color: red;
+}
+.direction-social-icons .fa-facebook-f:hover,
+.direction-social-icons .fa-twitter:hover,
+ .direction-social-icons .fa-instagram:hover{
+    background-color: var(--dark);
+    color: var(--white);
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+footer{
+    background-color: black;
+}
+footer .direction-social-icons{
+    width: 80px;
+}
+footer .left-footer{
+    margin-top: 20px;
+}
+footer .mid-footer{
+        margin-top: 20px;
+}
+
+footer .right-footer{
+        margin-top: 150px;
+}
+footer button{
+    border-radius: 30%;
+  background-color: yellowgreen;
+        text-decoration: none;
+        margin-top: 10px;
+}
+footer a{
+    color: orangered;
+
+}
+.footer-btn{
+    color: antiquewhite;
+}
+.footer-btn:hover{
+    color:wheat;
+    background-color: #8d2929;
+}
+
+
+/*.......menu...........*/
+
+
+.heading-lineM:before,
+.heading-lineM:after{
+    background: rgb(168, 164, 164);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.heading-lineM:before{
+    margin-left: -50%;
+    right: .5em;
+}
+
+.heading-lineM:after{
+    left: .5em;
+    margin-right: -50%;
+}
+.row{}
+.image{}
+ .d-block{
+   height: 30vh;
+    width: 100%;
+    padding: 10px;
+}
+.image .menu-price{
+     color: var(--secondary-color);
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    background-color:var(--white);
+    padding: .5rem;
+    border-radius: 50%;
+    font-size: 20px
+}
+.image h2{
+    color: darkgray;
+}
+.image h2:hover{
+/*    background: red;*/
+    color: firebrick;
+}
+#private-day .title-avobe{
+    width: 30%;
+}
+
+#menu-content11{
+
+}
+#menu-content11 .menu-content-img {
+     height: 50vh;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+#menu-content11 .menu-content-img::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/06/waves-decoration.svg) repeat-x center top;
+    background-size: auto;
+    background-attachment: scroll;
+    height: 3rem;
+    
+}
+
+
+/* ...................contact.............. */
+
+
+.middle {
+    position: static  !important;
+    transform: translateX(0) !important;
+}
+
+
+.header-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+
+.header-wrap__text {
+    text-shadow: 3px 3px 8px var(--secondary-color);
+    font-family: var(--banner-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_text {
+    font-size: 8rem;
+    letter-spacing: 2px;
+    text-align: center;
+    animation: coffeeAnim;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+/* ..............view............. */
+
+.input-data {
+    position: absolute;
+    top: 2em;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 500px;
+    height: 400px;
+    padding-left: 180px;
+    margin-left: 16%;
+  }
+  /* .input-data a{
+    text-decoration: none;
+  } */
+  
+  input[type="submit"] {
+    width: 40%;
+    height: 15%;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.1s ease;
+    cursor: pointer;
+    margin-top: 97%;
+    margin-right: 9%;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="submit"]:focus {
+    box-shadow: 0 4px 6px rgba(48, 48, 48, 0.4);
+
+    transition: 0.1s ease;
+    font-size: 14px;
+  }
+  
+  input[type="submit"]:active {
+    opacity: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    transition: 0.1s ease;
+  }
+   
+  #insert_cart:hover{
+    background-color: #8d2929;
+  }
+  #insert_buy:hover{
+    background-color: blueviolet;
+  }
+
+  .food_id{
+    margin-top: 10px;
+  }
+
+
+  .view_btn{
+    background-color: #cb7152;
+    margin-top: 7px;
+    border-radius: 20px;
+     color: #000;
+  }
+  .view_btn:hover{
+    background-color: blue;
+
+  }
+
+
+  /* ..................log in....................... */
+
